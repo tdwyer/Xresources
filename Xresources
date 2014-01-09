@@ -1,0 +1,245 @@
+!/* vim: set ts=2 sw=2 tw=80 et :*/
+! Xterm -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+! Core term config
+xterm*termName:           xterm-256color
+xterm*locale:             true
+xterm*utf8:               2
+xterm*eightBitInput:      true
+xterm*loginShell:         true
+! This sets Menus to be opened as 80x32 not just the term
+xterm*VT100.geometry:     120x44
+xterm*toolBar:            false
+xterm*selectToClipboard:  true
+xterm*cursorBlink:        true
+xterm*bellIsUrgent:       false
+xterm*visualbell:         false
+xterm*marginBell:         false
+xterm*poponbell:          true
+! I like being able to doubleclick to select a word which depends on the
+!   character class resource I use this see xterm manpage CHARACTER CLASSES
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Font
+xterm*faceName:           Terminus:style=Regular:size=9
+xterm*boldFont:           Terminus:style=Regular:size=9
+xterm*wideBoldFont:       Terminux:style=Bold:size=9
+xterm*boldMode:           false
+xterm*allowBoldFonts:     false
+xterm*fontDoublesize:     false
+xterm*scaleHeight:        1.01
+mterm*scaleWidth:         1.01
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Key bindings
+xterm*backarrowKey:         false 
+!.*backarrowKey:             false 
+xterm*backarrowKeyIsErase:  false
+xterm*metaSendsEscape:      false
+xterm*numLock:              false
+xterm*deleteIsDEL:          false
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Color
+xterm*foreground:         rgb:bd/bd/bd
+xterm*background:         rgb:00/00/00
+xterm*dynamicColors:      true
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Scroll
+xterm*saveLines:          10000
+xterm*fastScrool:         true
+xterm*jumpScroll:         true
+xterm*scrollTtyOutput:    false
+xterm*multiScroll:        true
+xterm*scrollKey:          true
+xterm*scrollBar:          false
+xterm*rightScrollBar:     true
+
+! Xcursor -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+Xcursor.theme: Neutral
+Xcursor.size: 16
+
+! x11-ssh-askpass ------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+x11-ssh-askpass*font:                   Terminus:style=Regular:size=9
+x11-ssh-askpass*background:             #000000
+x11-ssh-askpass*foreground:             #dbdbdb
+x11-ssh-askpass*Button*background:      #000000
+x11-ssh-askpass*Indicator*foreground:   #ff9900
+x11-ssh-askpass*Indicator*background:   #090909
+x11-ssh-askpass*topShadowColor:         #000000
+x11-ssh-askpass*bottomShadowColor:      #000000
+x11-ssh-askpass.*borderWidth:           1
+
+!xcalc-----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+xcalc*geometry:                         200x275
+xcalc.ti.bevel.background:              #111111
+xcalc.ti.bevel.screen.background:       #000000
+xcalc.ti.bevel.screen.DEG.background:   #000000
+xcalc.ti.bevel.screen.DEG.foreground:   LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background:  #000000
+xcalc.ti.bevel.screen.GRAD.foreground:  LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background:   #000000
+xcalc.ti.bevel.screen.RAD.foreground:   LightSeaGreen
+xcalc.ti.bevel.screen.INV.background:   #000000
+xcalc.ti.bevel.screen.INV.foreground:   Red
+xcalc.ti.bevel.screen.LCD.background:   #000000
+xcalc.ti.bevel.screen.LCD.foreground:   LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth:  0
+xcalc.ti.bevel.screen.M.background:     #000000
+xcalc.ti.bevel.screen.M.foreground:     LightSeaGreen
+xcalc.ti.bevel.screen.P.background:     #000000
+xcalc.ti.bevel.screen.P.foreground:     Yellow
+xcalc.ti.Command.foreground:            White
+xcalc.ti.Command.background:            777777
+xcalc.ti.button5.background:            Orange3
+xcalc.ti.button19.background:           #611161
+xcalc.ti.button18.background:           #611161
+xcalc.ti.button20.background:           #611111
+!uncomment to change label on division button
+!xcalc.ti.button20.label:      /
+xcalc.ti.button25.background:           #722222
+xcalc.ti.button30.background:           #833333
+xcalc.ti.button35.background:           #944444
+xcalc.ti.button40.background:           #a55555
+xcalc.ti.button22.background:           #222262
+xcalc.ti.button23.background:           #222262
+xcalc.ti.button24.background:           #222272
+xcalc.ti.button27.background:           #333373
+xcalc.ti.button28.background:           #333373
+xcalc.ti.button29.background:           #333373
+xcalc.ti.button32.background:           #444484
+xcalc.ti.button33.background:           #444484
+xcalc.ti.button34.background:           #444484
+xcalc.ti.button37.background:           #555595
+xcalc.ti.button38.background:           #555595
+xcalc.ti.button39.background:           #555595
+XCalc*Cursor:                           hand2
+XCalc*ShapeStyle:                       rectangle
+
+! rxvt-unicode -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+!
+! color0      (black)           = Black
+! color1      (red)             = Red3
+! color2      (green)           = Green3
+! color3      (yellow)          = Yellow3
+! color4      (blue)            = Blue3
+! color5      (magenta)         = Magenta3
+! color6      (cyan)            = Cyan3
+! color7      (white)           = AntiqueWhite
+! color8      (bright black)    = Grey25
+! color9      (bright red)      = Red
+! color10     (bright green)    = Green
+! color11     (bright yellow)   = Yellow
+! color12     (bright blue)     = Blue
+! color13     (bright magenta)  = Magenta
+! color14     (bright cyan)     = Cyan
+! color15     (bright white)    = White
+! foreground                    = Black
+! background                    = White
+!
+!
+! Jellybeans
+!
+! Black
+urxvt.color0: #000000
+urxvt.color8: #303030
+!
+! Red
+! 167:217
+urxvt.color1: #af0000
+urxvt.color9: #d75f5f
+!urxvt.color9: #ffafaf
+!
+! Green
+! 107:077
+urxvt.color2: #87af5f
+urxvt.color10: #5fdf5f
+!urxvt.color10: #afd787
+!
+! Yellow
+! 215:186
+urxvt.color3: #ffaf5f
+urxvt.color11: #d7d787
+!urxvt.color11: #ffdf87
+!
+! Blue
+! 110:081
+urxvt.color4: #87afd7
+urxvt.color12: #5fd7ff
+!
+! Magenta
+! 103:183
+!urxvt.color5: #8787af
+urxvt.color5: #8787d7
+urxvt.color13: #d7afff
+!
+! Cyan
+! 066:116
+urxvt.color6: #578787
+urxvt.color14: #87dfd7
+!
+! White
+urxvt.color7: #afafaf
+urxvt.color15: #d7d7d7
+!
+! Defaults
+urxvt.background: #121212
+urxvt.foreground: #808080
+!
+! End Color Schema
+!
+URxvt*borderColor: 0
+URxvt*cursorColor: 11
+URxvt*cursorColor2: 1
+URxvt*colorUL: 12
+URxvt*fading: 0
+URxvt*fadeColor: 0
+URxvt*intensityStyles: true
+URxvt*depth: 32
+URxvt*geometry: 120x44
+URxvt*termName:rxvt-256color
+URxvt*resource: $HOME/.Xresources
+URxvt*buffered: true
+URxvt*perl-ext-common:  default,matcher,tabbedex,clipboard
+URxvt*tabbed.new-button: false
+URxvt*tabbed.title: false
+URxvt*url-launcher: /usr/bin/firefox
+URxvt*matcher.button: 1
+URxvt*tabbed.tabbar-fg: 7
+URxvt*tabbed.tabbar-bg: 8
+URxvt*tabbed.tab-fg: 8
+URxvt*tabbed.tab-bg: 7
+URxvt*jumpScroll: true
+URxvt*skipScroll: true
+! Set the application icon pixmap; option -icon.
+! URxvt*iconFile: file
+! URxvt*font:
+URxvt*font: xft:Terminus:size=9:antialias=true:hinting=true
+URxvt*boldFont: xft:Terminus:bold:size=9:antialias=true:hinting=true
+URxvt*italicFont: xft:Terminus:italic:size=9:antialias=true:hinting=true
+URxvt*boldItalicFont: xft:Terminus:bolditalic:size=9:antialias=true:hinting=true
+! URxvt*title: string
+! URxvt*iconName: string
+URxvt*urgentOnBell: false
+URxvt*visualBell: false
+URxvt*loginShell: true
+URxvt*utmpInhibit: false
+! URxvt*print-pipe: string
+URxvt*scrollBar: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: false
+URxvt*scrollTtyKeypress: true
+URxvt*saveLines: 0
+URxvt*internalBorder: 0
+URxvt*cursorBlink: false
+URxvt*cursorUnderline: false
+hold: false
+!modifier: super
+
+!URxvt.mod: super
