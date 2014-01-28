@@ -1,64 +1,17 @@
 !/* vim: set ts=2 sw=2 tw=80 et :*/
-! Xterm -----------------------------------------------------------------------
-! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-! Core term config
-xterm*termName:           xterm-256color
-xterm*locale:             true
-xterm*utf8:               2
-xterm*eightBitInput:      true
-xterm*loginShell:         true
-!! This sets Menus to be opened as 80x32 not just the term
-xterm*VT100.geometry:     120x44
-xterm*toolBar:            false
-xterm*selectToClipboard:  true
-xterm*cursorBlink:        false
-xterm*bellIsUrgent:       false
-xterm*visualbell:         false
-xterm*marginBell:         false
-xterm*poponbell:          true
-! I like being able to doubleclick to select a word which depends on the
-!   character class resource I use this see xterm manpage CHARACTER CLASSES
-xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-!
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-! Font
-!xterm*faceName:           Terminus:style=Regular:size=9
-!xterm*boldFont:           Terminus:style=Regular:size=9
-!xterm*wideBoldFont:       Terminux:style=Bold:size=9
-xterm*boldMode:           false
-xterm*allowBoldFonts:     false
-xterm*fontDoublesize:     false
-!xterm*scaleHeight:        1.01
-!mterm*scaleWidth:         1.01
-!
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-! Key bindings
-!xterm*backarrowKey:         false 
-!!.*backarrowKey:             false 
-!xterm*backarrowKeyIsErase:  false
-xterm*metaSendsEscape:      true
-!xterm*numLock:              false
-!xterm*deleteIsDEL:          false
-!
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-! Color
-!xterm*foreground:         rgb:bd/bd/bd
-!xterm*background:         rgb:00/00/00
-!xterm*dynamicColors:      true
-!
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-! Scroll
-xterm*saveLines:          0
-xterm*fastScrool:         true
-xterm*jumpScroll:         true
-xterm*scrollTtyOutput:    false
-xterm*multiScroll:        true
-xterm*scrollKey:          true
-xterm*scrollBar:          false
-xterm*rightScrollBar:     true
 
-! rxvt-unicode -----------------------------------------------------------------------
-! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+!
+! Fonts
+!
+*.font: xft:Terminus:size=8:antialias=true:hinting=true
+*.boldFont: xft:Terminus:bold:size=8:antialias=true:hinting=true
+*.italicFont: xft:Terminus:italic:size=8:antialias=true:hinting=true
+*.boldItalicFont: xft:Terminus:bolditalic:size=8:antialias=true:hinting=true
+!
+!
+
+!
+! Jellybeans.vim Colors
 !
 ! color0      (black)           = Black
 ! color1      (red)             = Red3
@@ -128,17 +81,11 @@ xterm*rightScrollBar:     true
 *.background: #121212
 *.foreground: #808080
 !
-! End Color Schema
 !
 
-!
-! Fonts
-!
-*.font: xft:Terminus:size=8:antialias=true:hinting=true
-*.boldFont: xft:Terminus:bold:size=8:antialias=true:hinting=true
-*.italicFont: xft:Terminus:italic:size=8:antialias=true:hinting=true
-*.boldItalicFont: xft:Terminus:bolditalic:size=8:antialias=true:hinting=true
 
+! rxvt-unicode -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
 !
 ! rxvt-unicode
 !
@@ -164,8 +111,8 @@ URxvt*colorUL: 12
 !
 ! Cursor
 !
-URxvt*cursorColor: 11
-URxvt*cursorColor2: 10
+URxvt*cursorColor: 10
+URxvt*cursorColor2: 0
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: false
 
@@ -197,17 +144,6 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: false
 URxvt*scrollTtyKeypress: true
 
-!
-! I would like to completely wipe out ALL urxvt key combos
-! Xorg */+ XFCE */+ urxvt */+ gnu-screen */+ Vim = Way Too Much
-! I need more keys on my keyboard. Fracking Lenovo Killed the Thinkpad Keyboard
-! How can I make the Hyper and/or Super key work in screen?
-!
-!modifier: super
-!URxvt.mod: super
-!URxvt*title: string
-!URxvt*print-pipe: string
-
 ! Perl
 URxvt*perl-ext-common:  default,matcher,tabbedex,clipboard
 
@@ -224,4 +160,47 @@ URxvt*tabbed.tabbar-fg: 7
 URxvt*tabbed.tabbar-bg: 8
 URxvt*tabbed.tab-fg: 8
 URxvt*tabbed.tab-bg: 7
+
+! Xterm -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+!
+! Core term config
+xterm*termName:           xterm-256color
+xterm*locale:             true
+xterm*utf8:               2
+xterm*eightBitInput:      true
+xterm*loginShell:         true
+!! This sets Menus to be opened as ??x?? not just the term
+xterm*VT100.geometry:     120x44
+xterm*toolBar:            false
+xterm*selectToClipboard:  true
+xterm*cursorBlink:        false
+xterm*bellIsUrgent:       false
+xterm*visualbell:         false
+xterm*marginBell:         false
+xterm*poponbell:          true
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Font
+xterm*boldMode:           false
+xterm*allowBoldFonts:     false
+xterm*fontDoublesize:     false
+!xterm*scaleHeight:        1.01
+!mterm*scaleWidth:         1.01
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Key bindings
+xterm*metaSendsEscape:      true
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Scroll
+xterm*saveLines:          0
+xterm*fastScrool:         true
+xterm*jumpScroll:         true
+xterm*scrollTtyOutput:    false
+xterm*multiScroll:        true
+xterm*scrollKey:          true
+xterm*scrollBar:          false
+xterm*rightScrollBar:     true
 
