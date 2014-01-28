@@ -180,14 +180,19 @@ xterm*visualbell:         false
 xterm*marginBell:         false
 xterm*poponbell:          true
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*borderWidth:        0
+xterm*fullscreen:         false
 !
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ! Font
+xterm*faceName:           Terminus:style=Regular:size=9
+xterm*boldFont:           Terminus:style=Regular:size=9
+xterm*wideBoldFont:       Terminux:style=Bold:size=9
 xterm*boldMode:           false
 xterm*allowBoldFonts:     false
 xterm*fontDoublesize:     false
-!xterm*scaleHeight:        1.01
-!mterm*scaleWidth:         1.01
+xterm*scaleHeight:        1.01
+xterm*scaleWidth:         1.01
 !
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ! Key bindings
